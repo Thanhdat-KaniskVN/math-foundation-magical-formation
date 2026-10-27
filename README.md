@@ -1,19 +1,17 @@
-# Vending Machine FSM 🥤
+﻿# Math Foundation & Magical Formation 🧠
 
-A Finite State Machine (FSM) model of an automated vending machine, inspired by **MIT 6.1200J Lecture 04 (Mathematics for Computer Science)**.
+A personal knowledge base documenting my journey through foundational mathematics, computer science, and algorithms. 
 
-## State Machine Definition
-*   **States:** `IDLE`, `HAS_MONEY`, `READY`
-*   **Initial state:** `IDLE` (money = 0)
-*   **Transitions:** `insert_coin`, `buy`, `cancel`
-*   **Invariant:** `money >= 0` AND `stock >= 0`
+## 📂 Project Directory
 
-## State Diagram
-```mermaid
-stateDiagram-v2
-    [*] --> IDLE
-    IDLE --> HAS_MONEY: Insert 2k/5k
-    HAS_MONEY --> READY: Insert enough coins
-    READY --> IDLE: Buy
-    HAS_MONEY --> IDLE: Cancel
-    READY --> IDLE: Cancel
+Here is a list of the projects and proofs implemented in this repository:
+
+### 1. [Vending Machine FSM](./vending_machine_fsm/)
+*   **Topic:** Discrete Mathematics, Finite State Machines (FSM).
+*   **Inspiration:** MIT 6.1200J Lecture 04.
+*   **Description:** A Python implementation of a vending machine using a state machine architecture, including invariant checks and unit tests.
+
+*(More projects like 8-Puzzle, Graph Algorithms, and Regex Engines will be added soon...)*
+
+---
+*“Mathematics is the music of reason.”*
